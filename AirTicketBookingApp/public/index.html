@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air Ticket Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>✈️ Air Ticket Booking System</h1>
+    <img
+      src="./images/download3.jpg"
+      alt="plane"
+      class="logo"
+      onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/3079/3079057.png';"
+    />
+  </header>
+
+  <section class="form-section">
+    <h2>🎟️ Book Your Ticket</h2>
+    <form action="/book" method="POST">
+      <label for="name">👤 Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="source">🛫 Source:</label><br />
+      <input type="text" id="source" name="source" required /><br /><br />
+
+      <label for="destination">🛬 Destination:</label><br />
+      <input type="text" id="destination" name="destination" required /><br /><br />
+
+      <label for="date">📅 Date of Travel:</label><br />
+      <input type="date" id="date" name="date" required /><br /><br />
+
+      <button type="submit">Generate Ticket</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📧 Contact us at: <a href="mailto:support@airtickets.com">support@airtickets.com</a></p>
+  </footer>
+</body>
+</html>

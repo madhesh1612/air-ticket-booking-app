@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Your Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Booking Page</h1>
+  </header>
+
+  <section class="form-section">
+    <form action="/book" method="POST">
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+      <label>Source:</label><br>
+      <input type="text" name="source" required><br><br>
+      <label>Destination:</label><br>
+      <input type="text" name="destination" required><br><br>
+      <label>Travel Date:</label><br>
+      <input type="date" name="date" required><br><br>
+      <button type="submit">Generate Ticket</button>
+    </form>
+  </section>
+</body>
+</html>
